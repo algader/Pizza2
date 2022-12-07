@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>مطعم بيتزا | تواصل معنا  </title>
+	<script  type="text/html" src="{require('index.js')}"></script>
+</head>
+<body>
+  <!-- top-menu -->  
+  <section class="top-menu">    
+	<div class="row ">   
+		<nav class="navbar navbar-expand-lg navbar-light bg-light w-100">    
+		 <div class="navbar-header">               
+			<button class="navbar-toggler btn btn-icon custom-btn"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button> 
+			<a href="index.html" class="navbar-brand "> 
+				<img src="./images/logo.png" alt="مطعم بيتزا">
+			</a>
+		 </div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item active p-2">
+				  <a class="nav-link" href="/index.html">الرئيسية </a>
+				</li>
+				<li class="nav-item p-2">
+					<a class="nav-link" href="/about.html">عن المطعم </a>
+				  </li>
+				  <li class="nav-item p-2">
+					<a class="nav-link" href="/contact.html">اتصل بنا</a>
+				  </li>
+			  </ul>
+			</div>
+			<i class="d-lg-block  d-none">
+				<a href="./checkout.html" class="btn btn-icon custom-btn"  title="عربة الشراء" data-toggle="tooltip" id="btn-shoppingcart">
+					<i class="fas fa-shopping-cart"></i>
+	
+				</a> 
+			   </i> 
+		  </nav>       
+	</div>
+	</section>
+	<!-- end top-menu -->
+	     
+		 <!--الخريطة-->
+		<div class="row map">
+			<div class="col-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.538902688458!2d54.3896917!3d24.5014283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2c5b69e67e4c85d!2sBlaze%20Pizza!5e0!3m2!1sde!2sde!4v1669807147900!5m2!1sde!2sde" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+      
+	  <div class="container">
+		<!-- عناصر التنقل الفرعية  -->
+		<div class="row">
+			<ol class="breadcrumb custom-breadcrumb">
+				<li>
+					<a href=".">صفحة الرئيسية</a>
+				</li>
+				<li class="active">تواصل معنا</li>
+				</ol>
+		</div>
+	    <!-- نهاية عناصر التنقل الفرعية  -->
+	   </div>
+
+	   <div id="contact-options" class="row">
+             <!--معلومات التواصل-->
+			 <div class="col-12 col-lg-3 offset-lg-2">
+				<h4 class="heading-with-border-bottom">
+				  معلومات التواصل
+				</h4>
+				<div id="contact-info">
+				  <div>
+					  <i class="fas fa-phone fa-lg"></i>
+					  +97124926842
+				  </div>
+				  <div>
+					  <i class="fas fa-envelope fa-lg"></i>
+					  info@araby.com
+				  </div>
+				  <div>
+					  <i class="fas fa-map-marker-alt fa-lg"></i>
+					  العنوان: 
+					 شارع حمودة بن علي الظاهري أبو ظبي
+				  </div>
+				</div>
+		
+				<!--قسم الاشتراك بالنّشرة البريدية-->
+				<h4 class="heading-with-border-bottom">اشترك بالنشرة البريدية</h4>
+				<form id="form-subscription">
+				  <div class="form-group">
+					<div class="input-group">
+					  <input type="email" class="form-control custom-form-control" 
+							  placeholder="البريد الإلكتروني" name="email" required>
+					  <button class="btn custom-btn" type="submit"> 
+					  متابعة
+					</button>
+					</div>
+				  </div>
+				</form>
+			  </div>
+			  <!--نهاية معلومات التواصل-->
+              
+			   <!--قسم اترك رسالة-->
+			   <div class="col-12 col-lg-6">
+				<h4>اترك رسالة</h4>
+				<form class="row">
+				  <div class="col-md-6 form-group">
+					<input class="form-control custom-input-details custom-form-control" name="name" type="text" placeholder="الاسم" required>
+				  </div>
+				  <div class="col-md-6 form-group">
+					<input class="form-control custom-input-details custom-form-control" name="email" type="email" placeholder="البريد الإلكتروني" required>
+				  </div>
+				  <div class="col-12 form-group">
+					<textarea class="form-control custom-input-details custom-form-control" name="message" placeholder="نص الرسالة" required></textarea>
+				  </div>
+				  <div class="col-12 form-group">
+					<div class="clearfix">
+					  <button type="submit" class="float-left btn custom-btn custom-btn-with-icon">
+						<span>
+						  إرسال الرسالة
+						  <i class="far fa-paper-plane"></i>
+						</span>
+					  </button>
+					</div>
+				  </div>
+				</form>
+			  </div>
+			  <!--نهاية قسم اترك رسالة-->
+	   </div>
+
+	    <!--تذييل الصفحة-->
+		<div id="footer" class="row" > 
+			<div id="footer-nav" class="col-12 text-center">
+				<div class="footer-logo">
+					<a href="./">
+						<img src="./images/logo.png" alt="مطعم بيتزا">
+					</a>
+				</div>
+				<div id="footer-nav-links" class="col-12 d-none d-md-block">
+					<a href="."> الرئيسية</a>
+					<a href="careers.html"> الوظائف الشاغرة</a>
+					<a href="privacy-policy.html"> سياسة الخصوصية</a>
+					<a href="about.html"> عن المطعم</a>
+					<a href="contact.html">  اتصل بنا</a>
+				</div>
+				<div id="newsletter" class="col-md-6 offset-md-3">
+					<form>
+						<label for="footer-email">
+							تابع النشرة البريديّة لأحدث العروض
+						</label>
+						<br>
+						<div class="input-group">
+							<input type="email" class="form-control custom-form-control" 
+								 placeholder="البريد الإلكتروني" name="email" required>
+								<button type="submit" class="btn custom-btn">
+									متابعة
+								</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="footer-copyright-social" class="col-12">
+				<div class="container">
+					<div class="clearfix">
+						<div id="copyright" class="float-right">
+							جميع الحقوق محفوظة  لسنة 2022
+						</div>
+						<div id="social-icons" class="float-left">
+							<a href="https://www.facebook.com/BlazePizzaME">
+								<i class="fab fa-facebook-square fa-lg"></i>
+							</a>
+							<a href="https://www.instagram.com/BlazePizzaME">
+								<i class="fab fa-instagram fa-lg"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!--نهاية تذييل الصفحة-->
+</body>
+</html>

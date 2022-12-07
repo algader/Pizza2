@@ -1,0 +1,83 @@
+$main-color: #FF7766;
+$custom-color: #EEE;
+$blue-color: #53ccd7;
+
+.top-menu {
+  .navbar{
+    font-weight: bold;
+    padding: 0px 100px !important;
+    background-color: #FFF !important;
+    .navbar-nav{
+      li > a {
+         transition-property: background-color;
+         transition-duration: 0.5s;
+
+        &:hover{
+          color: $main-color !important;
+          background-color: $custom-color;
+          border-bottom: 1px solid $main-color;
+        }
+      }
+    }
+  }
+}
+
+.carousel-top{
+  .row{
+    display: block !important;
+  }
+
+  .carousel{
+    .carousel-item{
+      img{
+        height: 450px;
+      }
+    }
+
+    .carousel-indicators{
+      li{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 20px 5px 0px 0px;
+
+        &.active{
+          background-color: $main-color;
+        }
+      }
+    }
+
+  }
+}
+
+.custom-btn{
+  padding: 10px 20px;
+  color: $main-color !important;
+  border: 1px solid  $main-color !important;
+  font-weight: bold !important;
+
+  &:hover,
+  &:focus{
+    color: $custom-color !important;
+    background-color: $main-color !important;
+    border: 1px solid $custom-color !important;
+  }
+}
+
+
+@media (max-width: 991px){
+  .top-menu{
+    .navbar{
+      padding: 0px 20px !important;
+      .navbar-nav{
+        a{
+          border-bottom: none !important;
+          padding-right: 5px; 
+
+        }
+      }
+    }
+  }
+}
+
+
